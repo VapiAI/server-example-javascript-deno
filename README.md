@@ -24,24 +24,23 @@ To get started with this project:
 
 1. Clone the repository to your local machine.
 2. Install the dependencies by running `pnpm install`.
-3. Setup wrangler by creating `wrangler.toml` by command `cp wrangler.example.toml wrangler.toml` in the root directory. Install wrangler cli if you don't have it using `npm i -g wrangler`.
+3. Setup `.env` by command `cp example.env .env` in the root directory.
 4. You can start the project locally using command `pnpm start`
 5. You can deploy the project to Deno using command `pnpm deploy:prod`
 
 #### Configuration
 
-1. Create `wrangler.toml` by command `cp wrangler.example.toml wrangler.toml` in the root directory.
-2. Get ur `OPENAI_API_KEY` from openai and update the `wrangler.toml` file.
-3. From Vapi dashboard, you can get your Vapi Private key from **Dashboard > Accounts > Vapi Keys > Api Key** and update `wrangler.toml` file
-4. Get ServerURL
+1. Get ur `OPENAI_API_KEY` from openai and update the `.env` file.
+2. From Vapi dashboard, you can get your Vapi Private key from **Dashboard > Accounts > Vapi Keys > Api Key** and update `.env` file
+3. Get ServerURL
 
    1. Using Ngrok: Start the project locally using `pnpm start` and then use ngrok to get the url.
    2. Using Deno: Deploy to heroku/railway or others and get the url for the serverURL.
 
    The serverURL to be configured in the **Dashboard > Accounts > Settings** is `https://<domain>/api/webhook` This has all the messages placeholder. You can also try `https://<domain>/api/functions/basic` or `https://<domain>/api/rag`
 
-5. There are sample request body in `./assistants` folder. Use them to create an assistant using the POST endpoint `https://api.vapi.ai/api/assistant` with any of the body from `./assistants`.
-6. Now you have an assistant created which you can talk with from the Vapi Dashboard.
+4. There are sample request body in `./assistants` folder. Use them to create an assistant using the POST endpoint `https://api.vapi.ai/api/assistant` with any of the body from `./assistants`.
+5. Now you have an assistant created which you can talk with from the Vapi Dashboard.
 
 #### Explore and make changes.
 
