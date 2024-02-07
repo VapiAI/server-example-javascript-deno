@@ -1,0 +1,13 @@
+{
+  "name": "deno-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "deno run --allow-net --allow-env index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kaustubh",
+  "license": "ISC"
+}
